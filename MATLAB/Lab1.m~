@@ -252,11 +252,11 @@ E_unvoiced=sum(unvoiced.^2)/256;
 voiced_zero_crossing = zero_cross(voiced);
 unvoiced_zero_crossing = zero_cross(unvoiced);
 
-unvoiced_filtered=frames_filtered(36,:);
-unvoiced_Pre = clip(unvoiced_filtered);
+uvoiced_filtered=frames_filtered(31,:);
+uvoiced_Pre = clip(uvoiced_filtered);
  
-vu_voiced = vu_classify(voiced,voiced_Pre);
-vu_unvoiced  = vu_classify(unvoiced,unvoiced_Pre);
+vu_voiced = vu_classify(voiced);
+vu_unvoiced  = vu_classify(unvoiced);
 
 
 
