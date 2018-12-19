@@ -1,0 +1,1001 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\usepackage{culmus}
+\def\HeblatexEncoding{HE8}
+\def\HeblatexEncodingFile{he8enc}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+דוח מכין - מעבדת עיבוד אות דיבור - מעבדה
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Author
+ג'וש לזרוס -
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+200138030
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset space \qquad{}
+\end_inset
+
+צפריר דרדיק -
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+30556698
+\end_layout
+
+\begin_layout Enumerate
+כאשר נכניס אות שהוא אינו אות דיבור לתוך המערכת המערכת שלנו, ישנם הנחות מסויימות
+ שהנחנו לגבי אות דיבור שלא יהיו נכונות עבור אותות אחרים, למשל:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+הנחנו שאות הדיבור שלנו נמצא בתחום מסויים, כלומר ה
+\begin_inset Formula $pitch$
+\end_inset
+
+ הוא בטווח של 
+\begin_inset Formula $50,400$
+\end_inset
+
+ ולכן עבור אותו שיש להם הרמוניות שונות מהטווח הזה אנחנו לא נוכל לקודד אותם.
+\end_layout
+
+\begin_layout Itemize
+הנחנו שאות הדיבור נמצא ב
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מצבים, או קולי או א-קולי ולכן עבור למשל מוסיקה קלאסית, ייתכנו צלילים שהם
+ גם קוליים וגם א-קוליים שלא נוכל לפענח.
+\end_layout
+
+\begin_layout Itemize
+הייתה לנו גם הנחה בתחילת המעבדה הקודמת כי ה
+\begin_inset Formula $pitch$
+\end_inset
+
+ לא חורג מתחום הדיבור.
+ ייתכן ועבור צלילים מסויימים לא נוכל להניח הנחה זו.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+מכיוון שבמסגרת מסויימת ייתכן שיש לנו שילוב של אות קולי וא-קולי, כאשר נשתמש
+ בשיטת ה
+\lang english
+MELP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אנחנו בעצם חופפים בין מסגרות, מה שיגרום למצב שההחלטה שלנו לגבי האם מסגרת
+ היא קולית או לא תהיה הרבה יותר נכונה מכיוון שאנחנו נוכל בצורה יותר ממוקדת
+ לזהות האם המסגרת היא קולית או לא.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+החתך אנכי ניתן לראות עבור כל זמן את תכולת התדר.
+ בחתך אופקי ניתן לראות עבור כל תדר כיצד הוא מתנהג בזמן, כלומר באילו זמנים
+ הוא יותר נמוך ובאילו הוא יותר גבוה.
+\end_layout
+
+\begin_layout Enumerate
+אם נגדיל את החלון הזמני יותר מידי אנחנו נאבד את רזולוציית הזמן, כלומר אנחנו
+ תמיד נעשה 
+\begin_inset Formula $DFT$
+\end_inset
+
+ על חלון זמן רחב ובחלון רחב כזה אנחנו יכולים גם להיתקל ביותר מעברים בין
+ אות קולי לא-קולי וגם הרזולוציה תקטן.
+ אם נקטין את החלון, אמנם נקבל רזולוציה טובה יותר אך אם זאת התדרים 
+\begin_inset Quotes eld
+\end_inset
+
+יימרחו
+\begin_inset Quotes erd
+\end_inset
+
+ יותר ויהיה לנו יותר קשה להבדיל בין תדרים שהם קרובים.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+גרף הספקטרוגרמה עם סימון המילים
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename pasted3.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+תדר ה
+\lang english
+pitch
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מסומן בציר האנכי בשחור
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename pasted2.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+קוד המטלב של הפונקציה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+residual_energy
+\lang hebrew
+ 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename pasted4.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+ה
+\lang english
+residual_energy
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אחראית ל
+\lang english
+gain
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מהסכמה של מקודד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+LPC
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+.
+ למעשה זהו ההגבר שעלינו להפעיל על המסגרת הקולית או הא-קולית על מנת לקבל
+ עוצמת קול כפי שהייתה בכניסה.
+ אנחנו קודם מפלטרים את האות בכדי להישאר עם תדרים נמוכים ולאחר מכן אנחנו
+ מחשבים את ה
+\lang english
+gain
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+.
+\end_layout
+
+\begin_layout Enumerate
+נשתמש בפונקציה זו במקודד.
+ כלומר נעביר את האות המקורי דרך הפונקציה ונקבל בסוף את ה
+\lang english
+gain
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+.
+\end_layout
+
+\begin_layout Enumerate
+במודל החיזוי הליניארי הייתה הנחה שאותות הדיבור שלנו הם מצורה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+all-pole
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כלומר שהוא כולו קטבים:
+\begin_inset Formula 
+\[
+H\left(z\right)\frac{X\left(z\right)}{W\left(z\right)}=\frac{1}{A\left(z\right)}
+\]
+
+\end_inset
+
+ כלומר אם נתון לנו כבר מקדמי הסינון אנחנו צריכים את התמסורת ההופכית, כלומר
+ 
+\begin_inset Formula $FIR$
+\end_inset
+
+ .
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+גרפים של האות המחולק והלא מחולק
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename pasted9.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ניתן להבחין כי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הגרפים אינם זהים.
+ זאת מכיוון שכאשר חילקנו את האות, ישנם מקטים שיש בהם אפסים רבים יותר וכאשר
+ איחדנו איבדנו את המידע הזה ועל כן הגרפים אינם דומים.
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+קוד המטלב הרלוונטי לחלק א'
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename pasted10.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+האותות בסעיף ב' אחרי התיקון
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename pasted8.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ כעת נבחין כי התוצאות זהות, פונקציית ה
+\begin_inset Formula $filter$
+\end_inset
+
+ עשתה עבורנו את עבודת החיבור בין המקטעים.
+ כלומר לא ניתן לזהות יותר שהיה איזה הפרדה ואז חיבור מחדש.
+ למסנן ה
+\begin_inset Formula $IIR$
+\end_inset
+
+ יש תלות ביציאות הקודמות ובכניסות הקודמות ולכן יש להעביר בכל מקטע את הכניסות
+ והיציאות של המקטע הקודם.
+ עבור מסנן 
+\begin_inset Formula $FIR$
+\end_inset
+
+ אין תלות ביציאות אלא רק בכניסות ולכן יש להעביר את כניסות העבר של המקטע
+ הקודם.
+\end_layout
+
+\begin_layout Enumerate
+לפי תיעוד פונקציית הפילטר עבור 
+\begin_inset Formula $P\left(z\right)=1$
+\end_inset
+
+ ומסנן מכנה באורך 
+\begin_inset Formula $L$
+\end_inset
+
+, עלינו לשרשר 
+\begin_inset Formula $L-1$
+\end_inset
+
+ יציאות עבר.
+ עבור מסנן מונה באורך 
+\begin_inset Formula $L-1$
+\end_inset
+
+ עדיין נצטרך לשרשר 
+\begin_inset Formula $L-1$
+\end_inset
+
+ ערכי עבר מכיוון שמסנן המכנה עדיין יהיה תלוי ב
+\begin_inset Formula $L-1$
+\end_inset
+
+ איברים.
+\end_layout
+
+\begin_layout Enumerate
+נעשה שימוש ב
+\begin_inset Formula $IIR$
+\end_inset
+
+ במהלך הפיענוח מכיוון שהמסנן הזה יעזור לנו להחליק את המעטפת הספקטרלית של
+ האות שפענחנו.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+הפתרון הראשון כנראה פחות טוב מכיוון שכל מטרתינו היא לבדוק כמה האות המקורי
+ דומה לאות המשוחזר וכאשר אנחנו מתעלמים ממקטעים שהם דומים )כלומר שהשחזור
+ שלהם התבצע בצורה טובה( אנחנו למעשה מתעלמים מההצלחה הזו.
+ לכן הפתרון השני הוא הטוב יותר עבורנו.
+\end_layout
+
+\end_body
+\end_document
